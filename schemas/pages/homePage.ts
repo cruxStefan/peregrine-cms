@@ -1,10 +1,8 @@
-//schemas/content_types/page.ts
-import {DocumentIcon} from '@sanity/icons'
+//schemas/pages/homePage.ts
 export default {
-  name: 'page',
-  title: 'Page',
+  name: 'homePage',
+  title: 'Home Page',
   type: 'document',
-  icon: DocumentIcon,
   fields: [
     {
       name: 'title',
@@ -20,10 +18,19 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: 'sections',
-      title: 'Sections',
-      type: 'array',
-      of: [{type: 'hero'}, {type: 'backers'}],
+      name: 'hero',
+      title: 'Hero',
+      type: 'hero',
+    },
+    {
+      name: 'team',
+      title: 'Team Section',
+      type: 'team',
+    },
+    {
+      name: 'backers',
+      title: 'Backers',
+      type: 'backers',
     },
   ],
 }

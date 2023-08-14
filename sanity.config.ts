@@ -3,7 +3,7 @@ import {deskTool} from 'sanity/desk'
 import {media} from 'sanity-plugin-media'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
-import {CogIcon, DocumentsIcon} from '@sanity/icons'
+import {CogIcon, HeartIcon, HomeIcon, UsersIcon} from '@sanity/icons'
 
 export default defineConfig({
   name: 'default',
@@ -18,7 +18,15 @@ export default defineConfig({
         return S.list()
           .title('Content')
           .items([
-            S.listItem().title('Page(s)').icon(DocumentsIcon).child(S.documentTypeList('page')),
+            S.listItem()
+              .title('Home Page')
+              .icon(HomeIcon)
+              .child(S.document().schemaType('homePage').documentId('homePage')),
+            S.listItem()
+              .title('Team Members')
+              .icon(UsersIcon)
+              .child(S.documentTypeList('teamMember')),
+            S.listItem().title('Backers').icon(HeartIcon).child(S.documentTypeList('backer')),
             S.listItem()
               .title('Site Settings')
               .icon(CogIcon)
