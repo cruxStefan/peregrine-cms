@@ -25,7 +25,7 @@ export default {
     {
       name: 'heroVideo',
       title: 'Hero Video',
-      type: 'maskedVideo',
+      type: 'vimeo',
       validation: (Rule) => Rule.required(),
     },
   ],
