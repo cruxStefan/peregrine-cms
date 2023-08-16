@@ -6,5 +6,16 @@ import vimeo from './content_types/vimeo'
 import teamMember from './content_types/teamMember'
 import team from './sections/team'
 import homePage from './pages/homePage'
+import hiring from './sections/hiring'
 
-export const schemaTypes = [siteSettings, backer, backers, hero, vimeo, team, teamMember, homePage]
+export const schemaTypes = [
+  siteSettings,
+  backer,
+  backers,
+  hero,
+  vimeo,
+  team,
+  teamMember,
+  homePage,
+  hiring,
+]

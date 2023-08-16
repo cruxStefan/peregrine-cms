@@ -23,6 +23,11 @@ export default {
       type: 'hero',
     },
     {
+      name: 'hiring',
+      title: 'Hiring Section',
+      type: 'hiring',
+    },
+    {
       name: 'team',
       title: 'Team Section',
       type: 'team',
