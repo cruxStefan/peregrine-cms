@@ -49,6 +49,12 @@ export default {
       title: 'Privacy Policy',
       type: 'privacy',
     },
+    {
+      name: 'pressKit',
+      title: 'Press Kit',
+      type: 'file',
+      description: 'Press kit for download.',
+    },
   ],
   preview: {
     select: {
