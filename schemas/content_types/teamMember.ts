@@ -30,6 +30,17 @@ export default {
           validation: (Rule) => Rule.required(),
         },
         {
+          name: 'bio',
+          title: 'Bio',
+          type: 'array',
+          of: [{type: 'block'}],
+        },
+        {
+          name: 'linkedIn',
+          title: 'LinkedIn',
+          type: 'url',
+        },
+        {
           name: 'photo',
           title: 'Photo',
           type: 'image',

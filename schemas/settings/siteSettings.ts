@@ -42,34 +42,12 @@ export default {
           description: 'Background image for footer.',
           validation: (Rule) => Rule.required(),
         },
-        {
-          name: 'links',
-          title: 'Links',
-          type: 'array',
-          of: [
-            {
-              name: 'link',
-              title: 'Link',
-              type: 'object',
-              icon: LinkIcon,
-              fields: [
-                {
-                  name: 'linkText',
-                  title: 'Link Text',
-                  type: 'string',
-                  validation: (Rule) => Rule.required(),
-                },
-                {
-                  name: 'linkUrl',
-                  title: 'Link URL',
-                  type: 'url',
-                  validation: (Rule) => Rule.required().uri({allowRelative: true}),
-                },
-              ],
-            },
-          ],
-        },
       ],
+    },
+    {
+      name: 'privacyPolicy',
+      title: 'Privacy Policy',
+      type: 'privacy',
     },
   ],
   preview: {

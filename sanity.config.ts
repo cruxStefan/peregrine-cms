@@ -4,6 +4,8 @@ import {media} from 'sanity-plugin-media'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
 import {CogIcon, HeartIcon, HomeIcon, UsersIcon} from '@sanity/icons'
+import {dashboardTool} from '@sanity/dashboard'
+import {netlifyWidget} from 'sanity-plugin-dashboard-widget-netlify'
 
 export default defineConfig({
   name: 'default',
@@ -36,6 +38,23 @@ export default defineConfig({
     }),
     media(),
     visionTool(),
+    dashboardTool({
+      widgets: [
+        netlifyWidget({
+          title: 'Netlify Deploys',
+          sites: [
+            {
+              title: 'Peregrine Hydrogen',
+              apiId: '57f5d186-3ae8-4d76-be0f-4c7083d25e38',
+              buildHookId: '64e4e6daed92fd2e2595086a',
+              name: 'Peregrine Hydrogen',
+              url: 'https://peregrine-hydrogen.netlify.app',
+              branch: 'prod',
+            },
+          ],
+        }),
+      ],
+    }),
   ],
 
   schema: {

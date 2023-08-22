@@ -23,6 +23,11 @@ export default {
       type: 'hero',
     },
     {
+      name: 'scroller',
+      title: 'Scroller',
+      type: 'scroller',
+    },
+    {
       name: 'hiring',
       title: 'Hiring Section',
       type: 'hiring',
