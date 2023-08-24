@@ -51,9 +51,9 @@ export default {
     },
     {
       name: 'pressKit',
-      title: 'Press Kit',
+      title: 'Press Release',
       type: 'file',
-      description: 'Press kit for download.',
+      description: 'Press release for download.',
     },
   ],
   preview: {

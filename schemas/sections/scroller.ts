@@ -113,13 +113,6 @@ export default {
           type: 'vimeo',
           validation: (Rule) => Rule.required(),
         },
-        {
-          name: 'logoText',
-          title: 'Logo Text',
-          type: 'image',
-          description: 'This is the logo text that appears over the masked video.',
-          validation: (Rule) => Rule.required(),
-        },
       ],
     },
   ],
