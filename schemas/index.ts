@@ -9,6 +9,7 @@ import homePage from './pages/homePage'
 import hiring from './sections/hiring'
 import privacy from './sections/privacy'
 import scroller from './sections/scroller'
+import outcomeStat from './content_types/outcomeStat'
 
 export const schemaTypes = [
   siteSettings,
@@ -22,4 +23,5 @@ export const schemaTypes = [
   hiring,
   privacy,
   scroller,
+  outcomeStat,
 ]

@@ -113,6 +113,15 @@ export default {
           type: 'vimeo',
           validation: (Rule) => Rule.required(),
         },
+        {
+          name: 'stats',
+          title: 'Stats',
+          type: 'array',
+          of: [{type: 'outcomeStat'}],
+          validation: (Rule) => [
+            Rule.required().min(3).max(3).error('You must have exactly 3 stats'),
+          ],
+        },
       ],
     },
   ],
