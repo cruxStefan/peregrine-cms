@@ -10,9 +10,10 @@ export default {
   },
   fields: [
     {
-      name: 'video',
-      title: 'Video URL',
-      type: 'url',
+      name: 'videoList',
+      title: 'Video URL List',
+      type: 'array',
+      of: [{type: 'url'}],
       validation: (Rule) => Rule.required(),
     },
     {
