@@ -46,7 +46,7 @@ export default defineConfig({
             {
               title: 'Peregrine Hydrogen',
               apiId: '57f5d186-3ae8-4d76-be0f-4c7083d25e38',
-              buildHookId: '64e4e6daed92fd2e2595086a',
+              buildHookId: '651c27d67992d33719a8f26e',
               name: 'Peregrine Hydrogen',
               url: 'https://peregrine-hydrogen.netlify.app',
               branch: 'prod',
